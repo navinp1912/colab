@@ -5,7 +5,7 @@ execution_path = os.getcwd()
 
 prediction = CustomImagePrediction()
 #prediction.setModelTypeAsResNet()
-prediction.setModelTypeAsDenseNet()
+prediction.setModelTypeAsInceptionV3()
 prediction.setModelPath("idenprof/models/model.h5")
 prediction.setJsonPath("idenprof/json/model_class.json")
 prediction.loadModel(num_objects=3)
