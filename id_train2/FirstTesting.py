@@ -4,8 +4,9 @@ import os
 execution_path = os.getcwd()
 
 prediction = CustomImagePrediction()
-prediction.setModelTypeAsResNet()
-prediction.setModelPath("idenprof/models")
+#prediction.setModelTypeAsResNet()
+prediction.setModelTypeAsDenseNet()
+prediction.setModelPath("idenprof/models/model.h5")
 prediction.setJsonPath("idenprof/json/model_class.json")
 prediction.loadModel(num_objects=3)
 
